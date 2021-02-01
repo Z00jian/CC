@@ -60,11 +60,17 @@
 //	return 0;
 //}
 
+//int main()
+//{
+//	int a = 9;
+//	float *p = (float*)&a;
+//	printf("%d", *p);
+//
+//	return 0;
+//}
 int main()
 {
-	int a = 9;
-	float *p = (float*)&a;
-	printf("%d", *p);
-
+	unsigned int a = 0x1234;
+	unsigned char b = *(unsigned char *)&a;
 	return 0;
 }
